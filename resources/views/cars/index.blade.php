@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-7 col-lg-12 mt-1 border">
       
-     <form class="needs-validation  px-5 py-1 mt-1" method="POST" action="{{route('createCar')}}">
+     <form class="needs-validation  px-5 py-1 mt-1" method="POST" action="{{route('createCar')}}" enctype="multipart/form-data">
       @csrf
       <h2 class="mt-5">Dados do veiculo</h2>
       <div class="row g-3 mt-3">
@@ -59,35 +59,35 @@
         </div>
         <div class="col-md-12">
           <label for="country" class="form-label">Imagem 01</label>
-          <input type="file" class="form-control" id="lastName" placeholder="" name="imagem01" value="" required>
+          <input type="file" class="form-control" id="lastName" name="imagem01" value="" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
         </div>
         <div class="col-md-12">
           <label for="country" class="form-label">Imagem 02</label>
-          <input type="file" class="form-control" id="lastName" placeholder="" name="imagem02" value="" required>
+          <input type="file" class="form-control" id="lastName"  name="imagem02" value="" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
         </div>
         <div class="col-md-12">
           <label for="cover" class="form-label">Imagem 03</label>
-          <input type="file" class="form-control" id="lastName" placeholder="" value="" name="imagem03" required>
+          <input type="file" class="form-control" id="lastName"  value="" name="imagem03" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
         </div>
         <div class="col-md-12">
           <label for="country" class="form-label">Imagem 04</label>
-          <input type="file" class="form-control" id="lastName" placeholder="" value="" name="imagem04"  required>
+          <input type="file" class="form-control" id="lastName" value="" name="imagem04"  required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
         </div>
         <div class="col-md-12">
           <label for="country" class="form-label">Imagem 05</label>
-          <input type="file" class="form-control" id="lastName" placeholder="" value="" name="imagem05" required>
+          <input type="file" class="form-control" id="lastName" value="" name="imagem05" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>

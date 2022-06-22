@@ -58,8 +58,8 @@ class CarController extends Controller
      */
     public function create()
     {
-       return view('cars.index');
-   }
+     return view('cars.index');
+ }
 
     /**
      * Store a newly created resource in storage.
@@ -68,7 +68,25 @@ class CarController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+
+
+        $storeCar01 = $request->file('imagem01');
+        $storeCar01->store('cars');
+
+        $storeCar02 = $request->file('imagem02');
+        $storeCar02->store('cars');
+
+        $storeCar03 = $request->file('imagem03');
+        $storeCar03->store('cars');
+
+        $storeCar04 = $request->file('imagem04');
+        $storeCar04->store('cars');
+
+        $storeCar05 = $request->file('imagem05');
+        $storeCar05->store('cars');
+
+
         $storeCar = Car::create($request->all());
 
         return view('cars.allCars');
