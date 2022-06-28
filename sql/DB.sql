@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `cars` (
   `dataEntrada` varchar(220) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `dataSaida` varchar (220) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,  
   PRIMARY KEY (`id`)
-)ENGINE=MyISAM AUTO_INCREMENT=3010 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+)ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 

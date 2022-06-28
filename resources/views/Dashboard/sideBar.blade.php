@@ -32,9 +32,8 @@
       <li class="nav-item">
         <form action="{{route('logout')}}" method="POST">
          @csrf
-         <button class="button is-link" type="submit" style="background-color: #00030C;">
-          <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
-        </button>
+           <div class="float-end mr-5"><button type="button" class="button is-light is-danger">Logout <i class=" mx-1 my-1 fa-solid fa-person-walking-dashed-line-arrow-right"></i></button></div>
+    </div>    
       </form>
     </li>
   </ul>

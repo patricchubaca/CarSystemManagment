@@ -45,7 +45,6 @@ class CarController extends Controller
             
             $data[] = $registro;
 
-
         }
 
         return ['data'=>$data];   
@@ -70,7 +69,6 @@ class CarController extends Controller
     public function store(Request $request)
     {   
 
-
         $storeCar01 = $request->file('imagem01');
         $storeCar01->store('cars');
 
@@ -85,7 +83,6 @@ class CarController extends Controller
 
         $storeCar05 = $request->file('imagem05');
         $storeCar05->store('cars');
-
 
         $storeCar = Car::create($request->all());
 
