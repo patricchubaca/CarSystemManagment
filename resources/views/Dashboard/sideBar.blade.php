@@ -32,12 +32,11 @@
       <li class="nav-item">
         <form action="{{route('logout')}}" method="POST">
          @csrf
-           <div class="float-end mr-5"><button type="button" class="button is-light is-danger">Logout <i class=" mx-1 my-1 fa-solid fa-person-walking-dashed-line-arrow-right"></i></button></div>
-    </div>    
-      </form>
-    </li>
-  </ul>
-
+         <div class="float-end mr-5"><button type="submit" class="button is-light border">Logout<i class=" mx-1 my-1 fa-solid fa-person-walking-dashed-line-arrow-right"></i></button></div>
+       </div>    
+     </form>
+   </li>
+ </ul>
 
 </nav>
 <!-- /.navbar -->
@@ -51,42 +50,42 @@
     <img src="/AdminLTE/dist/img/sracessoria.png" alt="SRacessoria" class="brand-image">
 
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-
-
     </div>
-
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
+           @can('is-admin')
            <li class="nav-item menu-open">
-              <a href="{{route('dashboard')}}" class="nav-link">
+            <a href="{{route('admin')}}" class="nav-link">
+              <i class="fa-solid fa-users"></i>
+              <p>
+                Gerenciar Usuários
+                <span class="right badge badge-danger"></span>
+              </p>
+            </a>
+          </li>
+          @endcan
+          <li class="nav-item menu-open">
+            <a href="{{route('dashboard')}}" class="nav-link">
               <i class="fa-solid fa-chart-line"></i>
-                <p>
-                   Controle dos Carros
-                  <span class="right badge badge-danger"></span>
-                </p>
-              </a>
-            </li>
-             <li class="nav-item menu-open">
-              <a href="{{route('newCar')}}" class="nav-link">
-               <i class="fa-solid fa-car"></i>
-                <p>
-                   Novo Carro
-                  <span class="right badge badge-danger"></span>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-copy"></i>
-                <p>
-                  Layout Options
-                  <i class="fas fa-angle-left right"></i>
-                  <span class="badge badge-info right"></span>
-                </p>
-              </a>
+              <p>
+               Controle dos Carros
+               <span class="right badge badge-danger"></span>
+             </p>
+           </a>
+         </li>
+         <li class="nav-item menu-open">
+          <a href="{{route('createCar')}}" class="nav-link">
+           <i class="fa-solid fa-car"></i>
+           <p>
+             Novo Carro
+             <span class="right badge badge-danger"></span>
+           </p>
+         </a>
+       </li>
+              <!--
               <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="/AdminLTE/pages/layout/top-nav.html" class="nav-link">
@@ -298,6 +297,7 @@
             </li>
 
             <!-- /.sidebar-menu -->
+
           </div>
           <!-- /.sidebar -->
         </aside>

@@ -35,10 +35,14 @@ class Car extends Model
         'ipva',
         'licensiamento',
         'outros',
-        'nomeVendedor',
+        'nomeVendedorVenda',
         'valorVenda',
-        'dataEntrada',
-        'dataSaida'    
+        'dataEntradaVenda',
+        'dataSaidavenda',
+        'nomeVendedorCompra',
+        'valorCompra',
+        'dataEntradaCompra',
+        'dataSaidaCompra'    
 
 
     ];
