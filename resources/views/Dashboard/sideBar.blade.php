@@ -56,7 +56,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
-           @can('is-admin')
+           @can('root')
            <li class="nav-item menu-open">
             <a href="{{route('admin')}}" class="nav-link">
               <i class="fa-solid fa-users"></i>

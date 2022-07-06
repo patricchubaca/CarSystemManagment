@@ -12,7 +12,7 @@ Route::get('/', function () { return view('auth.login');});
 Route::get('/dashboard', function () { return view('cars.allCars'); })->middleware(['auth'])->name('dashboard');
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
-Route::get('/admin', function () { return view('Adm.adm');})->name('admin');
+Route::get('/admin', function () { return view('Adm.admUsers');})->name('admin');
 ##################### Users #########################
 
 Route::get('/user', [CarController::class, 'index'])->name('car');

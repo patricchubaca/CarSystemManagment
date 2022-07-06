@@ -43,7 +43,5 @@ class Car extends Model
         'valorCompra',
         'dataEntradaCompra',
         'dataSaidaCompra'    
-
-
     ];
 }

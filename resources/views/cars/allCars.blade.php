@@ -16,7 +16,7 @@
           <th scope="col">Modelo</th>
           <th scope="col">Placa</th>
           <th scope="col">Ano</th>
-          <th scope="col">Ano</th>
+          <th scope="col">Visualizar</th>
         </tr>
       </thead>
       <tbody>

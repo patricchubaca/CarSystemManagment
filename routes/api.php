@@ -20,11 +20,13 @@ use App\Http\Controllers\ProviderController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) { return $request->user(); });
 
-Route::get('/cars', [CarController::class, 'index']);
 
-##################### Client #########################
-Route::get('/client', [ClientController::class, 'index']);
-Route::post('/client', [ClientController::class, 'create'] );
-Route::post('/client/{id}', [ClientController::class, 'update'] );
-Route::get('/client/{id}', [ClientController::class, 'show'] );
-Route::delete('/client/{id}', [ClientController::class, 'destroy'] );
+##################### Cars #########################
+
+Route::get('/cars', [CarController::class, 'index']);
+Route::delete('/car/{id}', [CarController::class, 'destroy'])->name('deleteCar');
+
+
+##################### Users #########################
+
+Route::get('/users', [CarController::class, 'index']);
